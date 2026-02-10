@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-league-spartan: 'League Spartan', sans-serif;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.squircle {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  corner-shape: squircle;
+  background: #8458ff;
+}
+
+
+/* ---------------------- Circular text ------------------ */
+.circular-text {
+  margin: 0 auto;
+  border-radius: 50%;
+  position: relative;
+  font-weight: bold;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+}
+
+.circular-text span {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-size: 24px;
+  transition: all 0.5s cubic-bezier(0, 0, 0, 1);
+}
