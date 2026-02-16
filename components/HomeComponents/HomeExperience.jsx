@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Infowiz from "@/public/experiences/Infowiz.jpg"
 import blownfuse from "@/public/experiences/blownfuse.jpg"
+import CodeVLogo from "@/public/experiences/CodeV.png"
 import { FaBusinessTime } from "react-icons/fa";
 import { SiSitepoint } from "react-icons/si";
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
@@ -13,6 +14,16 @@ import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
 
 const HomeExperience = () => {
+
+    const CodeV = {
+        keyResponsibilities: [
+            "Working as Multiplayer Game Developer.",
+            "Optimizing data flow in between server and clients",
+        ],
+        skillsUsed: [
+            "C#", "Unity", "NotCode", "Multiplayer", ".Net", "PUN", "Real Time Synchronization"
+        ]
+    }
 
 
     const blownfuseData = {
@@ -53,10 +64,10 @@ const HomeExperience = () => {
 
 
                 {/*  ---------------------------- COntent section -------------------------  */}
-                <div className='w-full h-auto flex flex-col md:flex-row md:items-stretch justify-center items-center gap-5 pt-16'>
+                <div className='w-full h-auto flex flex-col lg:flex-row lg:items-stretch justify-center items-center gap-5 pt-16'>
 
                     {/* ------------ Blownfuse -------------- */}
-                    <div className='w-full md:w-[50%] h-auto p-4 py-8 md:py-8 md:p-8 bg-gradient-to-tl from-primary/10 to-white/5 rounded-2xl'>
+                    <div className='w-full lg:w-[32%] h-auto p-4 py-8 md:py-8 md:p-8 bg-gradient-to-tl from-primary/10 to-white/5 rounded-2xl'>
                         {/* name and logo */}
                         <div className='relative w-full flex gap-5 items-start justify-start'>
                             <div className='relative w-20 h-20'>
@@ -67,7 +78,7 @@ const HomeExperience = () => {
                                 <h3 className='text-primary/70 text-base md:text-lg'>Unity Developer | Technical Artist</h3>
                                 <div className='flex gap-3 items-center text-white/50'>
                                     <FaBusinessTime className='text-2xl ' />
-                                    <span>June 2025 - Present</span>
+                                    <span>June 2025 - Feb 2026</span>
                                 </div>
                             </div>
 
@@ -106,8 +117,58 @@ const HomeExperience = () => {
                         </div>
                     </div>
 
-                    {/* ------------------ benda ---------------- */}
-                    <div className='w-full md:w-[50%] h-auto p-4 py-8 md:py-8 md:p-8 bg-gradient-to-tl from-primary/10 to-white/5 rounded-2xl'>
+                    {/* ------------ CodeV -------------- */}
+                    <div className='w-full lg:w-[32%] h-auto p-4 py-8 md:py-8 md:p-8 bg-gradient-to-tl from-primary/10 to-white/5 rounded-2xl'>
+                        {/* name and logo */}
+                        <div className='relative w-full flex gap-5 items-start justify-start'>
+                            <div className='relative w-20 h-20'>
+                                <Image fill alt='logo' src={CodeVLogo} />
+                            </div>
+                            <div>
+                                <h2 className='font-montserrat font-bold text-xl md:text-2xl'>CodeV</h2>
+                                <h3 className='text-primary/70 text-base md:text-lg'>Multiplayer Game Developer</h3>
+                                <div className='flex gap-3 items-center text-white/50'>
+                                    <FaBusinessTime className='text-2xl ' />
+                                    <span>Feb 2026 - Present</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        {/* content/information */}
+                        <div className='w-full flex flex-col justify-start items-start'>
+
+                            {/* responsibilities */}
+                            <div className='w-full font-league pt-5'>
+                                <h5 className='text-lg font-semibold text-primary/70 '>Key Responsibilities:</h5>
+                                <div className='w-full flex flex-col justify-start items-start space-y-3 pt-2'>
+                                    {CodeV.keyResponsibilities.map((res, i) => (
+                                        <div key={i} className='flex items-start justify-normal gap-2 text-white/60 font-thin'>
+                                            <SiSitepoint className='text-primary/60 text-base flex-shrink-0' />
+                                            <p className=''>{res}</p>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                            {/* Used Skills */}
+                            <div className='w-full font-league pt-3'>
+                                <h5 className='text-lg font-semibold text-primary/70'>Skills/Technologies Used: </h5>
+                                <div className="w-full flex flex-wrap justify-start items-center">
+                                    {CodeV.skillsUsed.map((skill, i) => (
+                                        <span key={skill + i} className="font-thin text-white/70">
+                                            {skill}{i === CodeV.skillsUsed.length - 1 ? "." : ",\u00A0"}
+                                        </span>
+                                    ))}
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* ------------------ Infowiz ---------------- */}
+                    <div className='w-full lg:w-[32%] h-auto p-4 py-8 md:py-8 md:p-8 bg-gradient-to-tl from-primary/10 to-white/5 rounded-2xl'>
 
                         {/* Logo and name */}
                         <div className='relative w-full flex gap-5 items-start justify-start'>
