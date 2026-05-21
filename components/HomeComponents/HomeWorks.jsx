@@ -24,6 +24,7 @@ import playStar from "@/public/works/playStar.png"
 import EmotionalDamage from '@/public/works/EmotionalDamage.png'
 import MyPhoneRage from "@/public/works/MyPhoneRage.png"
 import xpenseTracker from "@/public/works/xpenseTracker.png"
+import TrashImg from "@/public/works/Trash.jpg"
 import Image from "next/image";
 import { MdOutlinePerson } from "react-icons/md";
 import { ImOffice } from "react-icons/im";
@@ -35,7 +36,17 @@ import { BsFillArrowRightCircleFill, BsGithub } from "react-icons/bs";
 
 
 
-const listings = [{
+const listings = [
+{
+  _id: "0",
+  type: "Bin Chicken Studios",
+  name: "Trash",
+  visitURL: "https://store.steampowered.com/app/1589700/Trash/",
+  repo: "",
+  desc: "Trash is a co-op open-world survival crafting game developed by Bin Chicken Studios. I designed and implemented the networked architecture to support multiplayer gameplay across multiple platforms, developed platform-specific network layer integrations, and optimized performance for co-op console systems.",
+  imageUrl: TrashImg,
+},
+{
   _id: "1",
   type: "Blownfuse Softlabs",
   desc: "Emotional Dama is a 2D cozy game centered on introspective themes and atmospheric player experience. I developed core gameplay mechanics and interaction systems while contributing as a technical artist through shader work, asset integration, and visual optimization. The project balances mechanics and aesthetics within a modular structure that supports iteration and experimentation.",

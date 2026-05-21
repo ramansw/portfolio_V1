@@ -44,14 +44,15 @@ const destinations = [
     ]
   },
   {
-    name: "Multiplayer",
-    desc: "I engineer robust networking solutions for real-time interactive environments: ",
+    name: "Multiplayer & Console Services",
+    desc: "I engineer robust networking solutions and platform integration systems for real-time interactive cross-platform environments: ",
     from: "#00933d",
     to: "#0284C7",
     json: tools,
     skills: [
-      { skillName: "Networking: ", skill: ["WebSocket", "PUN (Photon Unity Networking)"] },
-      { skillName: "Synchronization: ", skill: ["Real-Time State Synchronization", "Latency Compensation"] },
+      { skillName: "Networking: ", skill: ["WebSocket", "PUN", "Mirror", "Epic Online Services (EOS)"] },
+      { skillName: "Protocols & Systems: ", skill: ["NAT Traversal (STUN/TURN)", "Real-Time Synchronization", "Latency Compensation"] },
+      { skillName: "Console Services: ", skill: ["PlayStation Network (PSN)", "Xbox Live Services", "Nintendo Switch Online"] }
     ]
   },
   {
