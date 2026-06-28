@@ -240,7 +240,7 @@ const HomeContact = () => {
                viewport={{ once: true, amount: 0.2 }}
                className='relative w-full hidden lg:flex justify-center items-center pt-6 font-montserrat'>
                <a
-                 href="https://drive.google.com/file/d/11afvbg-pZnd-BzCvf7mmMNmZkuKh0xaD/view?usp=sharing"
+                 href="https://drive.google.com/file/d/1JUzsUAJCK8hhLURg1HJrzlrY2Lhyvq_x/view?usp=sharing"
                  target="_blank"
                  rel="noopener noreferrer"
                  className="w-full flex justify-center items-center gap-2 rounded-full py-2 px-4 border-[1px] text-white hover:bg-primary/70 hover:text-black transition-all duration-300 ease-in-out"
@@ -482,7 +482,7 @@ const HomeContact = () => {
                {/* Download Resume */}
                <div className='flex justify-center items-center font-montserrat w-full'>
                  <a
-                   href="https://drive.google.com/file/d/1JrMf6yz1uIEG3OJ8v4zDdW7HG9CjkS3z/view?usp=sharing"
+                   href="https://drive.google.com/file/d/1JUzsUAJCK8hhLURg1HJrzlrY2Lhyvq_x/view?usp=sharing"
                    target="_blank"
                    rel="noopener noreferrer"
                    className="w-full flex justify-center items-center gap-2 rounded-full py-2 px-4 border-[1px] text-white hover:bg-primary/70 hover:text-black transition-all duration-300 ease-in-out"
