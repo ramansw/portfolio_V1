@@ -60,7 +60,7 @@ const HomeAbout = () => {
           >
             <h2 className='font-thin text-lg text-center md:text-start'>Hello! I'm <span className='font-regular'>Ramandeep Singh</span>, a <br />
 
-              Game Programmer based in India, with hands-on experience designing and delivering interactive gameplay systems, real-time multiplayer features, and immersive simulations using Unity and C#. I specialize in building engaging player-focused experiences that combine strong technical architecture with creative implementation, focusing on performance, scalability, and clean code practices  <br /> <br />
+              Game Programmer based in India, with hands-on experience designing and delivering multiplayer game architecture, interactive gameplay systems, and console ports using Unreal Engine, Unity, C++, and C#. I specialize in building engaging player-focused experiences that combine robust technical architecture with creative implementation, focusing on console performance, network scalability, and clean codebase practices  <br /> <br />
 
             </h2>
 

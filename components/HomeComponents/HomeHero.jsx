@@ -88,8 +88,8 @@ const HomeHero = () => {
                         className="pt-5 font-thin text-[#d0d0d0] text-center md:text-start"
                         variants={fadeUpVariant}
                     >
-                        I am a Game Developer specializing in designing and building interactive gameplay systems and real-time experiences using Unity and C#.
-                        I focus on implementing scalable game architecture, optimizing performance, and developing features ranging from gameplay mechanics to networking and procedural content generation, delivering complete and engaging player experiences.
+                        I am a Game Programmer specializing in designing and building multiplayer game architecture, interactive gameplay systems, and console ports using Unreal Engine, Unity, C++, and C#.
+                        I focus on implementing scalable network architecture, console optimization, and developing robust features ranging from multiplayer replication to custom gameplay physics, delivering premium player experiences.
                     </motion.p>
 
                     <motion.a
@@ -173,7 +173,7 @@ const HomeHero = () => {
                             transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
                         />
 
-                        <p className="mt-8 font-montserrat font-bold text-white/40 tracking-[0.5em] uppercase text-xs md:text-sm text-center">Tech stack: Unity | Unreal | C#</p>
+                        <p className="mt-8 font-montserrat font-bold text-white/40 tracking-[0.2em] uppercase text-xs md:text-sm text-center">Tech stack: Unreal C++ | Unity C# | Multiplayer & Console</p>
                     </motion.div>
                     {/* dgdchsdu */}
 
@@ -207,14 +207,14 @@ const HomeHero = () => {
                         <GiGamepad className="relative w-[60%] h-[60%]" />
                     </motion.div>
 
-                    {/* ---- Git Merge --------- */}
+                    {/* ---- C++ --------- */}
                     <motion.div
-                        className="floating-icon absolute w-12 md:w-16 h-12 md:h-16 left-[10%] md:left-[10%] bottom-[5%] md:bottom-[5%] rounded-full flex justify-center items-center border-[2px] border-[#d03800] bg-gradient-to-br from-[#a22b00] to-[#370f00]"
+                        className="floating-icon absolute w-12 md:w-16 h-12 md:h-16 left-[10%] md:left-[10%] bottom-[5%] md:bottom-[5%] rounded-full flex justify-center items-center border-[2px] border-[#00599c] bg-gradient-to-br from-[#00447c] to-[#00284c]"
                         style={{ opacity: 0, transform: 'scale(0.5)' }}
                         animate={{ y: [0, -10, 0] }}
                         transition={{ duration: 2.6, repeat: Infinity, repeatType: "mirror" }}
                     >
-                        <GiJoystick className="relative w-[60%] h-[60%]" />
+                        <TbBrandCpp className="relative w-[60%] h-[60%] text-white" />
                     </motion.div>
 
                     {/* ---- React --------- */}
