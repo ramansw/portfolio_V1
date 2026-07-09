@@ -35,7 +35,7 @@ export const Navbar = () => {
       }
 
       // Detect active section
-      const sections = ["home", "about", "skills", "experience", "works", "contact"];
+      const sections = ["home", "about", "skills", "experience", "works", "videos", "contact"];
       const scrollPosition = window.scrollY + 100;
 
       let currentSection = "home";
@@ -75,6 +75,7 @@ export const Navbar = () => {
     { name: "Skills", value: "skills" },
     { name: "Experience", value: "experience" },
     { name: "Works", value: "works" },
+    { name: "Videos", value: "videos" },
     { name: "Contact", value: "contact" },
   ];
 

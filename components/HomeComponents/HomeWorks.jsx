@@ -19,7 +19,7 @@ import EAF from "@/public/works/EAF.png"
 import MiniCrush from "@/public/works/MiniCrush.png"
 import travelguru from "@/public/works/travelguru.png"
 import webTech from "@/public/works/webTech.png"
-import SuperMan from "@/public/works/SupermanUE.png"
+import SuperMan from "@/public/works/SupermanRender.png"
 import playStar from "@/public/works/playStar.png"
 import EmotionalDamage from '@/public/works/EmotionalDamage.png'
 import MyPhoneRage from "@/public/works/MyPhoneRage.png"

@@ -5,6 +5,7 @@ import HomeAbout from "@/components/HomeComponents/HomeAbout";
 import HorizontalScrollSection from "@/components/HomeComponents/HomeSkills";
 import HomeExperience from "@/components/HomeComponents/HomeExperience";
 import HomeWorks from "@/components/HomeComponents/HomeWorks";
+import HomeVideos from "@/components/HomeComponents/HomeVideos";
 import HomeEducation from "@/components/HomeComponents/HomeEducation";
 import HomeMoreProjects from "@/components/HomeComponents/HomeMoreProjects";
 import HomeContact from "@/components/HomeComponents/HomeContact";
@@ -19,6 +20,10 @@ export default function Home() {
 
       <section id="works">
         <HomeWorks />
+      </section>
+
+      <section id="videos">
+        <HomeVideos />
       </section>
 
       <section id="experience">
