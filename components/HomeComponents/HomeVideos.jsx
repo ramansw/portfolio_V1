@@ -19,7 +19,7 @@ const videoList = [
     title: "Superman UE5 Prototype",
     subtitle: "Third-Person Flight & Combat System",
     description: "A high-fidelity gameplay prototype developed in Unreal Engine 5. It features physics-based flight controls, custom speed-lines VFX, dynamic motion blur, and a heat-vision beam target acquisition system. Built to explore character controller responsiveness, animation state machine blending, and complex projectile logic in UE5.",
-    src: "/Videos/Superman.MP4",
+    youtubeId: "DbL30EdFqmA",
     poster: "/works/SupermanRender.png",
     tags: ["Unreal Engine 5", "Flight Mechanics", "VFX Shaders", "Character Controller"],
     engine: "unreal"
