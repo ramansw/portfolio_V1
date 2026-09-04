@@ -103,8 +103,8 @@ export const Navbar = () => {
           }}
           className={`${
             isScrolled ? "ml-auto mr-2 md:ml-auto md:mr-2" : "mx-auto"
-          } h-[7vh] md:h-[9vh] max-h-[70px] rounded-md md:rounded-2xl px-6 bg-gradient-to-bl from-primary/50 to-[#252525]/50
-          backdrop-blur-sm drop-shadow-sm flex items-center justify-between
+          } h-[7vh] md:h-[9vh] max-h-[70px] rounded-md md:rounded-2xl px-6 bg-gradient-to-bl from-primary/15 to-white/5
+          backdrop-blur-md border border-white/10 drop-shadow-sm flex items-center justify-between
           fixed left-0 right-0 md:relative`}
         >
           {/* LOGO SECTION */}

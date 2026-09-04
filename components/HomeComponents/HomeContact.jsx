@@ -438,7 +438,7 @@ const HomeContact = () => {
                   <motion.div
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="flex items-center gap-2 text-green-400 text-sm"
+                    className="flex items-center gap-2 text-primary text-sm"
                   >
                     <IoCheckmarkCircleOutline size={20} />
                     <span>Message sent successfully! I'll get back to you soon.</span>

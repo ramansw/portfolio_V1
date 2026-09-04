@@ -39,7 +39,7 @@ const HomeAbout = () => {
             }}
           >
             <motion.div
-              className="absolute w-full h-full md:h-[250px] md:w-[250px] bg-gradient-to-t from-primary to-blue-500 rounded-full blur-[40px] md:blur-[80px] 
+              className="absolute w-full h-full md:h-[250px] md:w-[250px] bg-gradient-to-t from-primary to-red rounded-full blur-[40px] md:blur-[80px] 
         opacity-65 left-0 md:left-1/3 top-0 md:top-[5%]"
               animate={{ rotate: 360 }}
               transition={{
@@ -70,7 +70,7 @@ const HomeAbout = () => {
               target="_blank" 
               rel="noopener noreferrer"
               className="group flex items-center gap-4 text-lg pl-4 pr-1 py-1 border-[2px] border-white rounded-full mt-10 md:mt-10
-                     transition-all duration-300 ease-in-out hover:bg-green-600 hover:cursor-pointer"
+                     transition-all duration-300 ease-in-out hover:bg-primary hover:cursor-pointer"
               initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}

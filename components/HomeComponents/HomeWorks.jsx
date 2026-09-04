@@ -209,10 +209,13 @@ const HomeWorks = () => {
             {slides.map((listing, idx) => (
               <SwiperSlide
                 key={idx}
-                className="relative w-[400px] md:w-[500px] lg:w-[600px] h-[600px] sm:h-[500px] md:h-[650px] min-h-[600px] transition-transform bg-gradient-to-br from-[#002028] to-[#131c17]"
+                className="relative w-[400px] md:w-[500px] lg:w-[600px] h-[600px] sm:h-[500px] md:h-[650px] min-h-[600px] transition-transform bg-gradient-to-br from-[#780000]/60 to-[#0c0000]/80"
                 style={{
                   borderRadius: "36px",
                   overflow: "hidden",
+                  backdropFilter: "blur(16px)",
+                  WebkitBackdropFilter: "blur(16px)",
+                  border: "1px solid rgba(255,255,255,0.08)",
                   boxShadow: "0 16px 48px 0 rgba(0,0,0,0.35)",
                   display: "flex",
                   flexDirection: "column", // ✅ ensures content flows top to bottom
@@ -290,7 +293,7 @@ const HomeWorks = () => {
 
         <motion.a
           className="group flex items-center gap-4 text-lg pl-4 pr-1 py-1 border-[2px] border-white rounded-full 
-                             transition-all duration-300 ease-in-out hover:bg-green-600 hover:cursor-pointer"
+                             transition-all duration-300 ease-in-out hover:bg-primary hover:cursor-pointer"
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}

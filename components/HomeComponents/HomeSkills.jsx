@@ -13,30 +13,30 @@ const destinations = [
   {
     name: "Programming",
     desc: "I specialize in low-level and high-level programming for performance-driven applications and games: ",
-    from: "#00CE56",
-    to: "#38BDF8",
+    from: "--color-primary",
+    to: "--color-secondary",
     json: frontend,
     skills: [
-      { skillName: "Core Languages: ", skill: ["C# (Advanced)", "C++ (Working Knowledge)", "Python"] },
+      { skillName: "Core Languages: ", skill: ["C#", "C++", "Python"] },
       { skillName: "Logic Systems: ", skill: ["Data Structures", "Algorithms", "Object Oriented Programming"] },
     ]
   },
   {
     name: "Game Engines",
     desc: "I have extensive experience building immersive experiences across industry-leading engines: ",
-    from: "#00CE56",
-    to: "#38BDF8",
+    from: "--color-red",
+    to: "--color-navy",
     json: uiux,
     skills: [
-      { skillName: "Development: ", skill: ["Unity (Advanced)", "Unreal Engine (Intermediate)"] },
+      { skillName: "Development: ", skill: ["Unity", "Unreal Engine"] },
       { skillName: "Tools: ", skill: ["Unity Editor", "Unreal Editor", "Blueprints"] },
     ]
   },
   {
     name: "Gameplay Systems",
     desc: "I design and implement complex mechanics that define the player experience: ",
-    from: "#00ab47",
-    to: "#0EA5E9",
+    from: "--color-primary",
+    to: "--color-navy",
     json: backend,
     skills: [
       { skillName: "Mechanics: ", skill: ["FPS Mechanics", "Character Controller"] },
@@ -46,8 +46,8 @@ const destinations = [
   {
     name: "Multiplayer & Console Services",
     desc: "I engineer robust networking solutions and platform integration systems for real-time interactive cross-platform environments: ",
-    from: "#00933d",
-    to: "#0284C7",
+    from: "--color-red",
+    to: "--color-primary",
     json: tools,
     skills: [
       { skillName: "Networking: ", skill: ["WebSocket", "PUN", "Mirror", "Epic Online Services (EOS)"] },
@@ -58,8 +58,8 @@ const destinations = [
   {
     name: "Technical Art",
     desc: "I bridge the gap between art and code to create visually stunning and optimized games: ",
-    from: "#00933d",
-    to: "#0369a1",
+    from: "--color-secondary",
+    to: "--color-navy",
     json: professional,
     skills: [
       { skillName: "Visuals: ", skill: ["Shader Integration", "VFX (Unity)", "Animation Systems"] },
@@ -71,9 +71,13 @@ const destinations = [
 const Card = ({ item }) => {
   return (
     <div
-      className={`relative w-[85vw] md:w-[55vw] h-[74vh] rounded-2xl overflow-hidden flex-shrink-0 p-6 md:p-10 `}
+      className={`relative w-[85vw] md:w-[55vw] h-[74vh] rounded-2xl overflow-hidden flex-shrink-0 p-6 md:p-10`}
       style={{
-        background: `linear-gradient(to bottom right, ${item.from}80, ${item.to}80)`,
+        background: `linear-gradient(135deg, rgb(var(${item.from}) / 0.42), rgb(var(${item.to}) / 0.28))`,
+        backdropFilter: "blur(24px)",
+        WebkitBackdropFilter: "blur(24px)",
+        border: "1px solid rgba(255,255,255,0.13)",
+        boxShadow: "0 8px 40px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.12)",
       }}
     >
 
@@ -86,7 +90,7 @@ const Card = ({ item }) => {
       <motion.div
         className={`absolute h-[250px] w-[250px] rounded-full blur-[80px]`}
         style={{
-          background: `${item.from}90`
+          background: `rgb(var(${item.from}) / 0.55)`
         }}
         animate={{
           x: ["0%", "80%", "10%", "90%", "0%"],

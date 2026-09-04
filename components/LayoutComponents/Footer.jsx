@@ -26,7 +26,7 @@ export const Footer = () => {
       name: "LinkedIn",
       icon: FaLinkedin,
       url: "https://www.linkedin.com/in/ramandeep-singh-0789232a8/",
-      color: "hover:text-blue-400"
+      color: "hover:text-secondary"
     },
    
     {

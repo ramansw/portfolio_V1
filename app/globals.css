@@ -5,9 +5,22 @@
 :root {
   --font-montserrat: 'Montserrat', sans-serif;
   --font-league-spartan: 'League Spartan', sans-serif;
+
+  /* Default theme: Crimson */
+  --color-bg:        12 0 0;
+  --color-primary:   247 127 0;
+  --color-secondary: 252 191 73;
+  --color-red:       214 40 40;
+  --color-navy:      120 0 0;
+  --color-light:     234 226 183;
 }
 
-body{
+body, *, *::before, *::after {
+  cursor: none !important;
+}
+
+body {
+  background-color: rgb(var(--color-bg));
   overflow-x: hidden;
 }
 

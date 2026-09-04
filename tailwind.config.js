@@ -15,7 +15,12 @@ module.exports = {
         league: ["var(--font-league-spartan)"],
       },
       colors:{
-        primary: "#00CE56"
+        primary:   "rgb(var(--color-primary) / <alpha-value>)",
+        secondary: "rgb(var(--color-secondary) / <alpha-value>)",
+        red:       "rgb(var(--color-red) / <alpha-value>)",
+        navy:      "rgb(var(--color-navy) / <alpha-value>)",
+        light:     "rgb(var(--color-light) / <alpha-value>)",
+        base:      "rgb(var(--color-bg) / <alpha-value>)",
       },
     },
   },

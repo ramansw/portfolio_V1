@@ -258,7 +258,7 @@ const HomeVideos = () => {
             ) : activeVideo.youtubeId ? (
               // Elegant Custom YouTube Iframe Player
               <div 
-                className="relative aspect-video w-full rounded-2xl md:rounded-3xl overflow-hidden bg-black border border-white/10 group shadow-2xl hover:shadow-[0_0_40px_rgba(0,206,86,0.15)] transition-all duration-500 h-[300px] md:h-[450px]"
+                className="relative aspect-video w-full rounded-2xl md:rounded-3xl overflow-hidden bg-black border border-white/10 group shadow-2xl hover:shadow-[0_0_40px_rgba(247,127,0,0.15)] transition-all duration-500 h-[300px] md:h-[450px]"
               >
                 <iframe
                   className="w-full h-full"
@@ -283,7 +283,7 @@ const HomeVideos = () => {
               // Elegant Custom Video Player
               <div 
                 ref={playerContainerRef}
-                className="relative aspect-video w-full rounded-2xl md:rounded-3xl overflow-hidden bg-black border border-white/10 group shadow-2xl hover:shadow-[0_0_40px_rgba(0,206,86,0.1)] transition-all duration-500 cursor-pointer"
+                className="relative aspect-video w-full rounded-2xl md:rounded-3xl overflow-hidden bg-black border border-white/10 group shadow-2xl hover:shadow-[0_0_40px_rgba(247,127,0,0.1)] transition-all duration-500 cursor-pointer"
                 onMouseMove={handleMouseMove}
                 onMouseEnter={() => { setIsHovered(true); setShowControls(true); }}
                 onMouseLeave={() => { setIsHovered(false); setShowControls(false); }}
@@ -315,7 +315,7 @@ const HomeVideos = () => {
                       exit={{ opacity: 0, scale: 0.8 }}
                       transition={{ duration: 0.3 }}
                     >
-                      <button className="w-16 md:w-20 h-16 md:h-20 rounded-full bg-primary text-black flex items-center justify-center shadow-[0_0_30px_rgba(0,206,86,0.5)] transform hover:scale-110 active:scale-95 transition-all duration-300 pointer-events-auto">
+                      <button className="w-16 md:w-20 h-16 md:h-20 rounded-full bg-primary text-black flex items-center justify-center shadow-[0_0_30px_rgba(247,127,0,0.5)] transform hover:scale-110 active:scale-95 transition-all duration-300 pointer-events-auto">
                         <BsPlayFill className="text-3xl md:text-4xl ml-1" />
                       </button>
                     </motion.div>
@@ -400,11 +400,11 @@ const HomeVideos = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   {activeVideo.engine === 'unreal' ? (
-                    <span className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-xs font-semibold text-blue-400">
+                    <span className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary/10 border border-secondary/20 text-xs font-semibold text-secondary">
                       <SiUnrealengine /> Unreal Engine 5
                     </span>
                   ) : (
-                    <span className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-xs font-semibold text-cyan-400">
+                    <span className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-xs font-semibold text-primary">
                       <SiUnity /> Unity
                     </span>
                   )}
@@ -445,7 +445,7 @@ const HomeVideos = () => {
                     onClick={() => setActiveVideo(video)}
                     className={`relative p-4 rounded-xl border flex gap-3 cursor-pointer group transition-all duration-300 ${
                       isActive 
-                        ? 'bg-gradient-to-br from-primary/10 to-primary/5 border-primary/45 shadow-[0_0_15px_rgba(0,206,86,0.1)]' 
+                        ? 'bg-gradient-to-br from-primary/10 to-primary/5 border-primary/45 shadow-[0_0_15px_rgba(247,127,0,0.1)]' 
                         : 'bg-white/5 border-white/5 hover:border-white/15 hover:bg-white/10'
                     }`}
                   >

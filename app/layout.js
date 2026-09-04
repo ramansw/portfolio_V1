@@ -5,6 +5,10 @@ import "./globals.css";
 import { Navbar } from "@/components/LayoutComponents/Navbar";
 import { Footer } from "@/components/LayoutComponents/Footer";
 import useLenis from "@/hooks/useLenis";
+import HomeTicTacToe from "@/components/HomeComponents/HomeTicTacToe";
+import ParticleBackground from "@/components/Ui/ParticleBackground";
+import CustomCursor from "@/components/Ui/CustomCursor";
+import ThemeSwitcher from "@/components/Ui/ThemeSwitcher";
 
 // Load Montserrat
 const montserrat = Montserrat({
@@ -30,11 +34,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${montserrat.variable} ${leagueSpartan.variable} font-league bg-[#090909] text-white overflow-x-hidden`}
+        className={`${montserrat.variable} ${leagueSpartan.variable} font-league text-white overflow-x-hidden`}
       >
+        <CustomCursor />
+        <ParticleBackground />
         <Navbar />
         {children}
         <Footer />
+        <HomeTicTacToe />
+        <ThemeSwitcher />
       </body>
     </html>
   );

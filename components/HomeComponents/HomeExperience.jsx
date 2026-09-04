@@ -91,7 +91,7 @@ const HomeExperience = () => {
                 {/*  ---------------------------- Content section -------------------------  */}
                 <div className='w-full h-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 pt-16 items-stretch justify-center'>
                     {experiencesData.map((exp, index) => (
-                        <div key={index} className='w-full h-auto p-4 py-8 md:py-8 md:p-8 bg-gradient-to-tl from-primary/10 to-white/5 rounded-2xl flex flex-col justify-between'>
+                        <div key={index} className='w-full h-auto p-4 py-8 md:py-8 md:p-8 bg-gradient-to-tl from-primary/10 to-white/5 backdrop-blur-md border border-white/10 rounded-2xl flex flex-col justify-between'>
                             <div>
                                 {/* name and logo */}
                                 <div className='relative w-full flex gap-5 items-start justify-start'>
@@ -142,7 +142,7 @@ const HomeExperience = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group flex items-center gap-4 text-lg pl-4 pr-1 py-1 border-[2px] border-white rounded-full mt-10 
-                             transition-all duration-300 ease-in-out hover:bg-green-600 hover:cursor-pointer"
+                             transition-all duration-300 ease-in-out hover:bg-primary hover:cursor-pointer"
                     initial={{ opacity: 0, y: 60 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.1 }}

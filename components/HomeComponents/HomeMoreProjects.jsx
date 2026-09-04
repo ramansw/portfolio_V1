@@ -60,7 +60,7 @@ const HomeMoreProjects = () => {
 
       <motion.a
         className="relative group flex items-center gap-4 text-lg pl-6 pr-1 py-1 border-[2px] border-white rounded-full mt-10 md:mt-10
-                           transition-all duration-300 ease-in-out hover:bg-green-600 hover:cursor-pointer"
+                           transition-all duration-300 ease-in-out hover:bg-primary hover:cursor-pointer"
         href='https://github.com/SudipGhara19'
         target="_blank"
         rel="noopener noreferrer"
