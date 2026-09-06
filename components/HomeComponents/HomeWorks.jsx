@@ -74,6 +74,7 @@ const listings = [
   desc: "This project involved building an endless runner where players control a paper plane navigating dynamic obstacles. I implemented core systems for movement, interaction, and scoring, while designing modular tile generation for continuous environments. The focus was on performance optimization, stable gameplay flow, and clear visual feedback to ensure an accessible player experience.",
   imageUrl: PaperPlane,
 },
+/*
 {
   _id: "4",
   type: "Blownfuse Softlabs",
@@ -83,6 +84,7 @@ const listings = [
   desc: "Worked as a Game Developer on a multi-game casino platform, contributing to gameplay systems and client–server integration. My role focused on implementing and maintaining game logic, integrating backend APIs, and ensuring smooth real-time interaction using WebSockets.",
   imageUrl: playStar,
 },
+*/
 {
   _id: "5",
   type: "Individual",
